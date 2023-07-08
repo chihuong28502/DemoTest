@@ -1,0 +1,21 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #EF4D2D;
+    --border-color: #DBDBDB;
+    --growth-from: 0.7;
+    --growth-to: 1;
+    --nav-height: 75px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+html {
+    /* HACK */
+    font-size: 62.5%;
+    line-height: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
