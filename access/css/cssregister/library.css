@@ -6,13 +6,23 @@
     --main-color: #323232;
     padding: 20px;
     background: lightgrey;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
     border-radius: 5px;
     border: 2px solid var(--main-color);
+    -webkit-box-shadow: 4px 4px var(--main-color);
     box-shadow: 4px 4px var(--main-color);
 }
 
@@ -35,12 +45,33 @@
     border-radius: 5px;
     border: 2px solid var(--main-color);
     background-color: var(--bg-color);
+    -webkit-box-shadow: 4px 4px var(--main-color);
     box-shadow: 4px 4px var(--main-color);
     font-size: 15px;
     font-weight: 600;
     color: var(--font-color);
     padding: 5px 10px;
     outline: none;
+}
+
+.input::-webkit-input-placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input::-moz-placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input:-ms-input-placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input::-ms-input-placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
 }
 
 .input::placeholder {
@@ -53,6 +84,8 @@
 }
 
 .login-with {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -64,11 +97,18 @@
     border-radius: 100%;
     border: 2px solid var(--main-color);
     background-color: var(--bg-color);
+    -webkit-box-shadow: 4px 4px var(--main-color);
     box-shadow: 4px 4px var(--main-color);
     color: var(--font-color);
     font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -80,9 +120,11 @@
 
 .button-log:active,
 .button-confirm:active {
+    -webkit-box-shadow: 0px 0px var(--main-color);
     box-shadow: 0px 0px var(--main-color);
+    -webkit-transform: translate(3px, 3px);
+    -ms-transform: translate(3px, 3px);
     transform: translate(3px, 3px);
-    background-color: #d3d3d3;
 }
 
 .button-confirm {
@@ -92,6 +134,7 @@
     border-radius: 5px;
     border: 2px solid var(--main-color);
     background-color: var(--bg-color);
+    -webkit-box-shadow: 4px 4px var(--main-color);
     box-shadow: 4px 4px var(--main-color);
     font-size: 17px;
     font-weight: 600;

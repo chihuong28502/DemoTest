@@ -10,6 +10,7 @@ form {
     height: 700px;
 }
 
-.buttom-confirm:hover {
-    background-color: #2d2121;
+.button-log:active,
+.button-confirm:active {
+    background-color: #d3d3d3;
 }
